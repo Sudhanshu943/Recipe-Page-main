@@ -34,6 +34,10 @@ h1,
 h2 {
   font-family: "Young Serif", sans-serif;
 }
+hr {
+  margin: 1.8em 0;
+  border: 1px solid var(--Stone150);
+}
 
 .container {
   max-width: 686px;
@@ -63,21 +67,107 @@ img {
   padding: 27px;
   background: var(--Rose50);
   border-radius: 18px;
-  margin: 30px 0;
+  margin: 35px 0;
 }
 
 .pre-time h3 {
-  margin-bottom: 20px;
+  font-size: x-large;
+  margin-bottom: 1rem;
   color: var(--Rose800);
 }
 
 .pre-time li {
   margin-left: 28px;
-  line-height: 26px;
+  padding-left: 15px;
+  line-height: 1.7rem;
+  color: var(--Stone600);
+  &::marker {
+    color: var(--Rose800);
+  }
+}
+
+.ingredient h2,
+.instruction h2,
+.nutrition h2 {
+  color: var(--Rose800);
+  font-weight: 500;
+  margin-bottom: 0.9em;
+  font-size: xx-large;
+}
+.ingredient ul li {
+  margin-left: 30px;
+  line-height: 1.8rem;
+  padding-left: 14px;
+  color: var(--Stone600);
+  &::marker {
+    color: var(--Rose800);
+    font-weight: 700;
+  }
+}
+
+.instruction ol li {
+  margin-left: 30px;
+  line-height: 1.8rem;
+  list-style: decimal;
+  color: var(--Stone600);
+  padding-left: 14px;
+}
+.instruction ol li::marker {
+  color: var(--Rose800);
+  font-weight: 700;
+}
+
+.nutrition p {
+  color: var(--Stone600);
+  margin-bottom: 1em;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.nutrition table tr {
+  border-bottom: 1.5px solid #c2c0c0;
+}
+
+.nutrition table td {
+  padding: 14px;
+  color: var(--Stone600);
+}
+.nutrition table .value {
+  color: var(--Rose800);
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  body {
+    display: flex;
+    background: var(--White);
+  }
+  .container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    background: var(--White);
+  }
+
+  img {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+  .content {
+    padding: 30px;
+  }
+
+  .recipe-name {
+    font-size: 2rem;
+    line-height: 35px;
+  }
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 13px;
   text-align: center;
 }
 .attribution a {
