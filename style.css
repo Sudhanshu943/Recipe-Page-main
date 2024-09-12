@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Outfit";
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Young Serif";
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 23px;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+  --Brown800: hsl(14, 45%, 36%);
+  --Rose800: hsl(332, 51%, 32%);
+  --Rose50: hsl(330, 100%, 98%);
+}
+body {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--Rose50);
+}
+h1,
+h2 {
+  font-family: "Young Serif", sans-serif;
+}
+
+.container {
+  max-width: 686px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: var(--White);
+}
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 18px;
+  margin-bottom: 30px;
+}
+
+.recipe-name {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-block-end: 0.6em;
+  color: var(--Stone900);
+}
+.description {
+  color: var(--Stone600);
+}
+.pre-time {
+  padding: 27px;
+  background: var(--Rose50);
+  border-radius: 18px;
+  margin: 30px 0;
+}
+
+.pre-time h3 {
+  margin-bottom: 20px;
+  color: var(--Rose800);
+}
+
+.pre-time li {
+  margin-left: 28px;
+  line-height: 26px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
