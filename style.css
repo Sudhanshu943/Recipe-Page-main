@@ -70,10 +70,11 @@ img {
   margin: 35px 0;
 }
 
-.pre-time h3 {
+.pre-time h2 {
   font-size: x-large;
   margin-bottom: 1rem;
   color: var(--Rose800);
+  font-family: "Outfit", sans-serif;
 }
 
 .pre-time li {
@@ -89,7 +90,7 @@ img {
 .ingredient h2,
 .instruction h2,
 .nutrition h2 {
-  color: var(--Rose800);
+  color: var(--Brown800);
   font-weight: 500;
   margin-bottom: 0.9em;
   font-size: xx-large;
